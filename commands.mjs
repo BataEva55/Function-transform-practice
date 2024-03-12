@@ -36,10 +36,14 @@ function search(arr, condition) {
   return null;
 }
 
-
-function transform(arr, transformer) {
-  return []
+const numbers = [1,2,3,4,5,6];
+function transform(number) {
+  return number * 2;
 }
+const doubledNumbers = numbers.map(transform);
+console.log(doubledNumbers);
+
+
 
 transform([1, 2, 3], (num) => num * 2);
 // [2, 4, 6]
